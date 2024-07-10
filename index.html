@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruleta de Juego</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <div id="option">
+      <img id="happyFace" src="images/happy.png" alt="Carita Feliz">
+      <img id="sadFace" src="images/sad.png" alt="Carita Triste">
+      <span id="resultText"></span>
+    </div>
+    <div id="buttons">
+      <button id="playButton" onclick="playGame()">Jugar</button>
+      <button id="resetButton" onclick="resetGame()" disabled>Reiniciar</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

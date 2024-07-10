@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  #container {
+    text-align: center;
+  }
+  
+  #option {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2em;
+    margin: 0 auto 20px auto;
+    position: relative;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden; /* Para asegurar que el contenido no sobresalga */
+  }
+  
+  #happyFace, #sadFace {
+    width: 70%; /* Ocupa el 70% del cuadro */
+    height: auto; /* Mantener la proporción */
+    display: none;
+    margin-top: 20px; /* Añadir margen superior para bajar la imagen */
+  }
+  
+  #resultText {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: auto; /* Empujar el texto hacia la parte inferior */
+    padding-bottom: 20px; /* Espacio debajo del texto */
+  }
+  
+  #buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 0 10px;
+  }
+  
+  #playButton {
+    background: #28a745;
+    color: white;
+  }
+  
+  #playButton:hover {
+    background: #218838;
+  }
+  
+  #resetButton {
+    background: #dc3545;
+    color: white;
+  }
+  
+  #resetButton:hover {
+    background: #c82333;
+  }
+  
+  button:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 600px) {
+    #option {
+      width: 250px;
+      height: 250px;
+      font-size: 1.5em;
+    }
+  
+    #happyFace, #sadFace {
+      width: 70%; /* Ocupa el 70% del cuadro */
+      height: auto; /* Mantener la proporción */
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+    }
+  }
+  
